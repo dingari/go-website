@@ -1,0 +1,168 @@
+
+/* General selectors for the body of the page */
+
+body {
+	background-color: #ededed;
+	font: normal 1em Raleway, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+
+/* Header section */
+
+header {
+	width: 100%;
+	height: 300px;
+	position: relative;
+	padding: 0;
+	margin-bottom: 2em;
+
+	text-align: center;
+}
+
+/* A div of solid color in the background */
+.header-bg-container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	background-color: #514444;
+
+	padding: 0;
+	z-index: -1;
+}
+
+/* Transparent overlayed on top of a solid div */
+.header-bg-container img {
+	position: absolute;
+	margin: auto; 
+    min-height: 100%;
+    min-width: 100%;
+
+    left: -100%;
+    right: -100%;
+    top: -50%;
+    bottom: -100%;
+
+    opacity: 0.35;
+
+    z-index: 0;
+}
+
+header h1 {
+	padding-top: 1.5em;
+	padding-bottom: 1em;
+	margin: 0;
+	font-size: 4em;
+	color: #faebd7;
+}
+
+nav {
+	width: 560px;
+	display: inline-block;
+
+	bottom: 0;
+	margin: 0 -300px;
+
+	position: absolute;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+nav a {
+	padding: 1em 1.5em;
+	margin: 1em 1.5em;
+	background-color: rgba(51, 44, 44, 0);
+	border-radius: 10px;
+	color: #faebd7;
+	text-decoration: none;
+}
+
+nav a:active {
+	background-color: rgba(29, 29, 29, 1);
+}
+
+
+/* Main section */
+
+main {
+	width: 750px;
+	margin: 0 auto;
+	color: #514444;
+}
+
+/*.main-text h4 {
+	display: inline-block;
+}*/
+
+#avatar-img {
+	max-width: 200;
+	max-height: 200px;
+
+	margin: 0em 1em;
+
+	float:right;
+}
+
+.thing {
+	padding: 0.2em 0;
+	margin: 1em 0;
+	border-radius: 1px;
+	text-align: justify;
+
+	clear: both;
+}
+
+.thing h4 {
+	font-weight: normal;
+	margin: 0.5em 0;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	margin: 0.5em 0 0.5em 0;
+	font-size: 1.5em;
+}
+
+h4 {
+
+}
+
+p {
+	margin: 0.5em 0;
+	line-height: 1.5em;
+}
+
+
+/* Footer section */
+
+footer {
+	text-align: center;
+	background-color: #514444;
+	padding: 1em 0 1em 0;
+	margin-top: 2em;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer li {
+	display: inline-block;
+	color: #faebd7;
+	margin: 0.5em 1em;
+}
